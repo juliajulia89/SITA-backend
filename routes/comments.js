@@ -1,7 +1,7 @@
 const Comment = require("../models/comment");
 const Flight = require("../models/flight");
 const express = require("express");
-const router = require("express").Router();
+const router = express.Router();
 
 
 
@@ -17,21 +17,27 @@ router.get("/comments", async (req, res) => {
 });
 
 // ROUTE TO GET COMMENT BY ID
+router.get("/comments/:id", getComment, (req, res) => {
+res.json(res.comment)
+})
 
-router.get("/comments/:commentsId", async (req, res) => {
+async function getComment(req, res, next){
+    let comment
   try {
-    const comments = await Comment.findById(req.params.id);
-    res.status(200).json(comments);
+    comment = await Comment.findById(req.params.id);
+    res.status(200).json(comment);
   } catch (err) {
     res.status(500).json({ message: err.mesaage });
   }
-});
+res.comment=comment
+next()
+};
 
 // ROUTE TO CREATE COMMENTS
 router.post("/comments", async (req, res) => {
   const comments = new Comment({
     comment: req.body.comment,
-    userId: req.body.usertId,
+    userId: req.body.userId,
     flightId: req.body.flightId,
   })
   try {
@@ -40,11 +46,6 @@ router.post("/comments", async (req, res) => {
   } catch (err) {
     res.status(400).json({ message: err.mesaage });
   }
-
-  //const {user, comment} = req.body;
-  //Comment.create({comment, userId, flightId: id, tags})
-  //.then ((newComment) => {
-  // })
 });
 
 module.exports = router;

@@ -26,7 +26,7 @@ Nice to have
 • HTTP Verbs
 • Data Validations
 • Manage duplicates
-• Postman Collection
+• Postman Collection // Used Rest Client instead 
 • Extra functionalities (Sort, Filter …)
 • Database: Mongo or Mysql
 • Develop using SOLID

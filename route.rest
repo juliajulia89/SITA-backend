@@ -1,0 +1,16 @@
+GET http://localhost:5000
+
+###
+
+GET http://localhost:5000/comments
+
+###
+GET http://localhost:5000/comments/1
+
+###
+POST http://localhost:5000/comments
+Content-Type: application/application/json
+{
+    "comment": "great",
+
+}

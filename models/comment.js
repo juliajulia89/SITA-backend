@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+/*const mongoose = require("mongoose")
 
 const commentSchema = new mongoose.Shema ({
 comment: { type: String, required: true} 
@@ -8,3 +8,4 @@ tags: { type: Array },
 });
 
 module.exports = mongoose.model("Comment", commentSchema)
+*/

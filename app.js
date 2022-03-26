@@ -14,7 +14,7 @@ const commentsRouter = require("./routes/comments.routes")
 app.use("/comments", commentsRouter);
 
 
-const flightsRouter = require ("./routes/flights.routes.js")
+const flightsRouter = require ("./routes/flights.routes")
 app.use("/flights", flightsRouter);
 
 

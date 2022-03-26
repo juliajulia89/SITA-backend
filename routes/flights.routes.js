@@ -16,7 +16,7 @@ router.get("/flights", async (req, res) => {
 });
 
 // ROUTE TO GET FLIGHT BY ID
-router.get("/flights/:id", getFlight, (req, res) => {
+router.get("/flights/:flightId", getFlight, (req, res) => {
 res.json(res.flight)
 })
 

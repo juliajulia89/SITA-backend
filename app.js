@@ -11,11 +11,11 @@ const indexRouter = require("./routes/index");
 app.use("/", indexRouter);
 
 const commentsRouter = require("./routes/comments.routes")
-app.use("/comments", commentsRouter);
+app.use("/api", commentsRouter);
 
 
 const flightsRouter = require ("./routes/flights.routes")
-app.use("/flights", flightsRouter);
+app.use("/api", flightsRouter);
 
 
 require("./error-handling")(app);

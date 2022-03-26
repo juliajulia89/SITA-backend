@@ -1,7 +1,8 @@
 const Comment = require("../models/comment");
 const Flight = require("../models/flight");
 const express = require("express");
-const router = express.Router();
+const router = require("express").Router();
+const mongoose = require ("mongoose")
 
 
 
@@ -50,4 +51,4 @@ router.post("/comments", async (req, res) => {
 
 module.exports = router;
 
-//populate when retrieving comments
+

@@ -1,6 +1,7 @@
-/*const mongoose = require("mongoose")
+const mongoose = require("mongoose")
+const { Schema, model } = mongoose;
 
-const flightSchema = new mongoose.Shema({
+const flightSchema = new Schema({
   id: { type: String, required: true },
   comment: { type: String, required: true },
   date: { type: Date, required: true, default: Date.now },
@@ -9,5 +10,4 @@ const flightSchema = new mongoose.Shema({
   tags: { type: Array },
 });
 
-module.exports = mongoose.model("Flight", flightSchema)
-*/
+module.exports = model("Flight", flightSchema)

@@ -9,9 +9,12 @@ require("./config")(app);
 
 const indexRouter = require("./routes/index");
 app.use("/", indexRouter);
-const commentsRouter = require("./routes/comments")
+
+const commentsRouter = require("./routes/comments.routes")
 app.use("/comments", commentsRouter);
-const flightsRouter = require ("./routes/flights")
+
+
+const flightsRouter = require ("./routes/flights.routes.js")
 app.use("/flights", flightsRouter);
 
 

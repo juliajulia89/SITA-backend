@@ -9,7 +9,7 @@ GET http://localhost:5000/comments/1
 
 ###
 POST http://localhost:5000/comments
-Content-Type: application/application/json
+Content-Type: application/json
 {
     "comment": "great",
 

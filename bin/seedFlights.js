@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv/config");
 const MONGODB = process.env.MONGODB_URI;
-const Phone = require("../models/flight");
+
 
 const seedFlights = async () => {
   mongoose
@@ -15,7 +15,7 @@ const seedFlights = async () => {
 
   try {
 
-    
+
   } catch (error) {
     console.log(error);
   }

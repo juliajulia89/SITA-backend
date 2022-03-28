@@ -18,6 +18,11 @@ router.get("/flights", async (req, res) => {
 // ROUTE TO GET FLIGHT BY ID
 router.get("/flights/:flightId", getFlight, (req, res) => {
 res.json(res.flight)
+const { flightId } = req.params;
+if (!mongoose.Types.ObjectId.isValid(flightId)) {
+  res.status(400).json({ message: "Specified id is not valid" });
+  return;
+}
 })
 
 async function getFlight(req, res, next){

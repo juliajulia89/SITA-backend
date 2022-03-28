@@ -20,6 +20,12 @@ router.get("/comments", async (req, res) => {
 // ROUTE TO GET COMMENT BY ID
 router.get("/comments/:commentsId", getComment, (req, res) => {
 res.json(res.comment)
+
+const { commentId } = req.params;
+  if (!mongoose.Types.ObjectId.isValid(commentId)) {
+    res.status(400).json({ message: "Specified id is not valid" });
+    return;
+  }
 })
 
 async function getComment(req, res, next){

@@ -2,6 +2,11 @@ readme.md
 
 # SITA-backend
 
+to run it
+npm install
+npm start 
+listening to PORT 5000
+
 ## Description
 
 Our client needs to create and read comments for each flight they have in our system, with the following information:

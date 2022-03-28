@@ -1,0 +1,46 @@
+[
+    
+{
+    "_id": "1",
+    "commentId": "1",
+    "comment":"Barcelona-Warsaw",
+    "date":"13/05/2021",
+    "userId":"123",
+    "flightId":"987",
+    "tags":"Barcelona"
+
+},
+
+{
+  "_id": "2",
+  "commentId": "2",
+  "comment": "Barcelona-Berlin",
+  "date": "24/11/2022",
+  "userId": "234",
+  "flightId": "876",
+  "tags": "Berlin"
+},
+
+{
+  "_id": "3",
+  "commentId": "3",
+  "comment": "Lisbon-London",
+  "date": "29/04/2022",
+  "userId": "345",
+  "flightId": "765",
+  "tags": "Lisbon"
+},
+
+{
+  "_id": "4",
+  "commentId": "4",
+  "comment": "Paris-Sydney",
+  "date": "09/02.2022",
+  "userId": "456",
+  "flightId": "654",
+  "tags": "Paris"
+}
+
+]
+
+

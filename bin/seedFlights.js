@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv/config");
 const MONGODB = process.env.MONGODB_URI;
+const Flight = require("../models/flight")
 
 
 const seedFlights = async () => {

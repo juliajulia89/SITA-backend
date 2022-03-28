@@ -18,7 +18,7 @@ router.get("/comments", async (req, res) => {
 });
 
 // ROUTE TO GET COMMENT BY ID
-router.get("/comments/:commentsId", getComment, (req, res) => {
+router.get("/comments/:commentId", getComment, (req, res) => {
 res.json(res.comment)
 
 const { commentId } = req.params;

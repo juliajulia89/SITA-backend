@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 const { Schema, model } = mongoose;
 
 const flightSchema = new Schema({
-  commentid: { type: Number, required: true },
+  commentId: { type: Number, required: true },
   comment: { type: String, required: true },
   date: { type: Date, required: true, default: Date.now },
   userId: { type: Number, required: true },
